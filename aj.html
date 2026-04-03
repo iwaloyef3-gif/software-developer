@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Felix | Software Developer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    /* Navbar */
+    nav {
+      background-color: #0d6efd;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav h1 {
+      font-size: 1.5em;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffc107;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(to right, #0d6efd, #6610f2);
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 25px;
+    }
+
+    .hero button {
+      padding: 12px 25px;
+      background: #ffc107;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background 0.3s;
+    }
+
+    .hero button:hover {
+      background: #ffcd39;
+    }
+
+    /* About Section */
+    .about {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .about h3 {
+      color: #0d6efd;
+      margin-bottom: 20px;
+      font-size: 2em;
+    }
+
+    .skills {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .skill {
+      background: #e9ecef;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: 500;
+      color: #0d6efd;
+      transition: 0.3s;
+    }
+
+    .skill:hover {
+      background: #0d6efd;
+      color: white;
+    }
+
+    /* WhatsApp Button */
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #25D366;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 28px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .whatsapp-btn:hover {
+      transform: scale(1.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0d6efd;
+      color: white;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        background: #0d6efd;
+        transition: 0.3s;
+      }
+
+      nav ul.show {
+        left: 0;
+      }
+
+      nav .menu-toggle {
+        display: block;
+        cursor: pointer;
+      }
+
+      nav ul li {
+        margin: 15px 0;
+        text-align: center;
+      }
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.8em;
+      cursor: pointer;
+    }
+  </style>
+  <link rel="stylesheet href=fomn.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h1>Felix Dev</h1>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul id="menu">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <h2>Hi, I'm Iwaloye Ajayi Felix 👋</h2>
+    <p>A Passionate Software Developer creating beautiful and functional digital experiences.</p>
+    <button onclick="scrollToAbout()">Learn More</button>
+  </section><section class="about" id="about">
+  <h3>About Me</h3>
+  <p>
+    I’m a passionate and results-driven <strong>Software Developer</strong> who thrives on turning ideas into powerful digital solutions. 
+    With a solid background in both <strong>front-end</strong> and <strong>back-end development</strong>, I create responsive, efficient, 
+    and user-friendly web applications that deliver real value. I enjoy tackling complex challenges, learning new technologies, 
+    and continuously improving my craft to build software that makes a difference. 
+  </p>
+</section>
+.
+    <section class="skills" id="skills">
+<h3>CORE SKILLS</h3>
+    As a software developer, I specialize in crafting dynamic, responsive, and visually appealing web solutions using modern technologies. 
+    Below are my key technical skills and what each contributes to your digital success.
+  </p>
+
+  
+    <img src="html img.png" alt="HTML Icon" class="skill-image">
+    <img src="css img.png" alt="CSS Icon" class="skill-image">
+    <img src="js img.png" alt="JavaScript Icon" class="skill-image">
+    <div class="skill-info">HTML | CSS | JavaScript</div>
+  </div>
+</div>
+
+}
+
+
+    <div class="skill-item">
+      <img src="js img.png" alt="JavaScript Icon" class="skill-image">
+      <div class="skill-info">JavaScript</div>
+    </div>
+  </div>
+</section>
+
+      <h4>HTML (HyperText Markup Language)</h4>
+      <p>
+        HTML forms the backbone of every website. It defines the structure and layout of web pages, ensuring your content is organized and accessible.
+        I use clean, semantic HTML to build strong foundations for fast, SEO-friendly, and responsive web pages.
+      </p>
+    </div>
+  </div>
+
+  <div class="skill-item">
+    <img src="css img.png" alt="CSS Icon" class="skill-image">
+    <div class="skill-info">
+      <h4>CSS (Cascading Style Sheets)</h4>
+      <p>
+        CSS brings design to life — controlling colors, layouts, and overall aesthetics. I create beautiful, mobile-friendly interfaces 
+        using modern CSS techniques like Flexbox, Grid, and animations to enhance user experience and engagement.
+      </p>
+    </div>
+  </div>
+
+  <div class="skill-item">
+    <img src="js icon.png" alt="JavaScript Icon" class="skill-image">
+    <div class="skill-info">
+      <h4>JavaScript</h4>
+      <p>
+        JavaScript adds interactivity and functionality to web pages. From dynamic forms and sliders to full web applications, 
+        I use JavaScript to build engaging user experiences that work smoothly across all devices.
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+.skills {
+  background-color: #f8f9fa;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.skills h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.skills p {
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skill-image {
+  width: 100px;
+  height: 100px;
+}
+
+.skill-info {
+  max-width: 600px;
+  text-align: left;
+}
+
+.skill-info h4 {
+  color: #007BFF;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.skill-info p {
+  color: #444;
+  font-size: 1em;
+  line-height: 1.6;
+}
+</style>
+    </div>
+  </section>
+
+  <!-- WhatsApp Contact Button -->
+  <button class="whatsapp-btn" onclick="openWhatsApp()">💬</button>
+
+  <footer>
+    <p>© 2025 Felix Developer | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("show");
+    }
+
+    function scrollToAbout() {
+      document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+    }
+
+    function openWhatsApp() {
+      // Replace with your actual WhatsApp number (use international format)
+      const phoneNumber = "2348123456789"; 
+      const message = encodeURIComponent("Hello Felix! I'm interested in your software development services.");
+      window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
+    }
+  </script>
+  <script src="index.js"></script>
+
+</body>
+</html>
